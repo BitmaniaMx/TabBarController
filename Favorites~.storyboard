@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JtG-a6-lpm">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TabBar Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="TabBar Demo" id="BYZ-38-t0r" customClass="ViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="house.circle" catalog="system" id="Mbw-VH-6df"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520" y="-469"/>
+        </scene>
+        <!--Favoritos-->
+        <scene sceneID="EDZ-Bv-dgU">
+            <objects>
+                <viewController id="rhb-FD-4gI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="la4-TR-gGI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="L0b-qy-bPI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="star.circle" catalog="system" id="cug-3X-YHw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNT-1k-3qv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3950" y="-370"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jgI-TA-EbG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JtG-a6-lpm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3RS-W9-2KN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WX5-zX-Sby"/>
+                        <segue destination="rhb-FD-4gI" kind="relationship" relationship="viewControllers" id="9XQ-E1-GfK"/>
+                        <segue destination="3Jg-NJ-wn8" kind="relationship" relationship="viewControllers" id="Yyj-7i-did"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyX-wh-Deg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45.038167938931295" y="3.5211267605633805"/>
+        </scene>
+        <!--Recommendation Table View Controller-->
+        <scene sceneID="Fj3-9Y-XWd">
+            <objects>
+                <tableViewController id="dbv-2Q-Oar" customClass="RecommendationTableViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Cfj-Sh-qIf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Recomendaciones" id="Dck-Du-bTQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0gS-gs-BEz">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="42.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0gS-gs-BEz" id="aI2-Kq-yZp">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="42.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Película recomendada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dr0-jf-DTd">
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="353" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dr0-jf-DTd" firstAttribute="top" secondItem="aI2-Kq-yZp" secondAttribute="topMargin" id="8Gw-rD-dv8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dr0-jf-DTd" secondAttribute="trailing" id="IMQ-9p-uZH"/>
+                                                <constraint firstItem="dr0-jf-DTd" firstAttribute="leading" secondItem="aI2-Kq-yZp" secondAttribute="leadingMargin" id="Oaj-jn-bwG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dr0-jf-DTd" secondAttribute="bottom" id="RYj-CE-0nD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="dbv-2Q-Oar" id="1TL-df-e2v"/>
+                            <outlet property="delegate" destination="dbv-2Q-Oar" id="y7V-Cj-9cv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yvF-gS-LGT"/>
+                    <connections>
+                        <segue destination="spz-PO-fnw" kind="show" identifier="detailSegue" id="KNN-WM-iPb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaG-hY-t4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2466.4122137404579" y="360.56338028169017"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LRk-dx-wrD">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="spz-PO-fnw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F5b-t8-dPf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detalle de la recomendacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1q-yQ-2le">
+                                <rect key="frame" x="88" y="416" width="216" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rmf-8A-E9q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HDZ-Vw-SV8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MvX-Va-BLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3425" y="361"/>
+        </scene>
+        <!--Recomendaciones-->
+        <scene sceneID="SXX-Dz-4yW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Jg-NJ-wn8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recomendaciones" image="popcorn.circle" catalog="system" id="Tlh-qG-f23"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OHd-V3-HMV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dbv-2Q-Oar" kind="relationship" relationship="rootViewController" id="0Qz-Xb-yVN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c21-t4-bFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1539.6946564885495" y="360.56338028169017"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.circle" catalog="system" width="128" height="123"/>
+        <image name="popcorn.circle" catalog="system" width="128" height="123"/>
+        <image name="star.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
