@@ -9,6 +9,12 @@ import UIKit
 
 class FavViewController: UIViewController {
 
+    @IBAction func favButtonTapped(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "favDetailSegue", sender: self)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
